@@ -1,0 +1,61 @@
+
+name: moto
+description: "MotoGuard Flutter project - Real-time GPS tracking for motorcycles"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # General Packages
+  shared_preferences: ^2.2.3
+  google_fonts: ^6.2.1
+  flutter_map: ^8.3.2
+  latlong2: ^0.10.1
+  geolocator: ^14.1.1
+  crypto: ^3.0.7
+
+  # Firebase Packages
+  firebase_core: ^4.2.0
+  firebase_auth: ^6.1.0
+  cloud_firestore: ^6.10.0
+  firebase_database: ^12.6.0
+  cloud_functions: ^6.0.0
+  firebase_messaging: ^16.7.0
+
+  # Local Notifications
+  flutter_local_notifications: ^22.3.2
+
+  # Other Packages
+  http: ^1.6.0
+  url_launcher: ^6.3.0
+  pin_code_fields: ^8.0.1
+  image_picker: ^1.0.0
+  usb_serial_for_android: ^0.0.9
+  intl: ^0.20.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/startpage.png
+    - assets/quad_bike.png
+    - assets/bike.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/quad_bike.png"
+  adaptive_icon_background: "#0B1220"
+  adaptive_icon_foreground: "assets/quad_bike.png"
+  remove_alpha_ios: true
